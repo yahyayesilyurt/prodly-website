@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f5f6fa;
+  color: #1a1a2e;
+}
+
+:root {
+  --blue: #2563eb;
+  --blue-light: #dbeafe;
+  --yellow: #eab308;
+  --yellow-light: #fef9c3;
+  --green: #22c55e;
+  --green-light: #dcfce7;
+  --red: #ef4444;
+  --gray: #6b7280;
+  --border: #e5e7eb;
+  --sidebar-w: 220px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-w: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --sidebar-w: 0px;
+  }
+}
