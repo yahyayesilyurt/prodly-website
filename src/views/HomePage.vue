@@ -36,11 +36,14 @@
     <section class="features">
       <h2 class="section-title">Everything you need to ship smarter</h2>
       <p class="section-sub">
-        One platform. Four powerful views. Zero guesswork.
+        One platform. Five powerful views. Zero guesswork.
       </p>
       <div class="features-grid">
         <div class="feature-card" v-for="f in features" :key="f.title">
-          <div class="feature-icon">{{ f.icon }}</div>
+          <div class="feature-card-top">
+            <div class="feature-icon">{{ f.icon }}</div>
+            <span v-if="f.badge" class="feature-badge">{{ f.badge }}</span>
+          </div>
           <h3>{{ f.title }}</h3>
           <p>{{ f.desc }}</p>
           <button class="feature-link" @click="$emit('navigate', f.page)">
@@ -144,7 +147,6 @@ const billing = ref("monthly");
 const toast = ref("");
 
 const heroStats = [
-  { val: "392+", label: "Feedback items analyzed" },
   { val: "80%", label: "Avg success probability" },
   { val: "3x", label: "Faster roadmap decisions" },
 ];
@@ -173,6 +175,13 @@ const features = [
     title: "Reports",
     desc: "Generate exportable summaries in PDF, CSV or JSON. Visualize trends over time and share insights with stakeholders.",
     page: "reports",
+  },
+  {
+    icon: "🧬",
+    title: "Product Memory",
+    desc: "Bayesian intelligence layer that learns from every sprint. Tracks velocity patterns, prevents recurring planning errors, and sharpens delivery forecasts over time.",
+    page: "memory",
+    badge: "New",
   },
 ];
 
@@ -421,7 +430,7 @@ function showToast(msg) {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -442,7 +451,7 @@ function showToast(msg) {
 
 .feature-icon {
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 0;
 }
 
 .feature-card h3 {
@@ -472,6 +481,31 @@ function showToast(msg) {
 .feature-link:hover {
   text-decoration: underline;
 }
+.feature-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.feature-card-top .feature-icon {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.feature-badge {
+  font-size: 9px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #3a9a7a);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 99px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+
 
 /* ── PRICING ──────────────────────────────── */
 .pricing {
@@ -725,6 +759,44 @@ function showToast(msg) {
   margin-top: 10px;
 }
 
+
+
+/* About */
+.about-section {
+  max-width: 640px;
+  margin: 28px auto 0;
+}
+
+.about-content {
+  padding: 8px 4px 0;
+}
+
+.about-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 14px;
+  letter-spacing: -0.2px;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #64748b;
+  margin: 0 0 14px;
+}
+
+.about-mission {
+  margin-top: 18px;
+}
+
+.about-mission span {
+  display: inline-block;
+  margin-top: 4px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
 /* ── TOAST ────────────────────────────────── */
 .toast {
   position: fixed;
@@ -755,6 +827,12 @@ function showToast(msg) {
 }
 
 /* Tablet */
+@media (max-width: 1280px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1024px) {
   .hero {
     padding: 52px 32px 60px;
@@ -781,6 +859,18 @@ function showToast(msg) {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .about-section {
+    margin-top: 24px;
+  }
+
+  .about-title {
+    font-size: 17px;
+  }
+
+  .about-content p {
+    font-size: 13px;
+  }
+
   .hero {
     padding: 36px 20px 120px;
   }

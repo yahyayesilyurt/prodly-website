@@ -46,7 +46,7 @@
       <div class="card">
         <h3>Customer Demand Score</h3>
         <div class="demand-score">
-          <span class="score-value">0.65</span>
+          <span class="score-value">0.78</span>
           <div class="progress-bar">
             <div class="fill blue" :style="{ width: demandWidth }"></div>
           </div>
@@ -60,15 +60,15 @@
         <div class="risk-list">
           <div class="risk-item">
             <span class="dot green"></span>
-            <span>Low risk: <strong>3 features</strong></span>
+            <span>Low risk: <strong>2 features</strong></span>
           </div>
           <div class="risk-item">
             <span class="dot yellow"></span>
-            <span>Medium risk: <strong>3 features</strong></span>
+            <span>Medium risk: <strong>2 features</strong></span>
           </div>
           <div class="risk-item">
             <span class="dot red"></span>
-            <span>High risk: <strong>3 features</strong></span>
+            <span>High risk: <strong>2 features</strong></span>
           </div>
         </div>
       </div>
@@ -76,22 +76,6 @@
       <!-- Roadmap Simulation -->
       <div class="card">
         <h3>Roadmap Simulation</h3>
-        <div class="sim-bars">
-          <div class="sim-row">
-            <span>Feature A</span>
-            <div class="bar">
-              <div class="fill blue" style="width: 80%"></div>
-            </div>
-            <span>80%</span>
-          </div>
-          <div class="sim-row">
-            <span>Feature B</span>
-            <div class="bar">
-              <div class="fill yellow" style="width: 55%"></div>
-            </div>
-            <span>55%</span>
-          </div>
-        </div>
         <button class="btn-primary" @click="$emit('runSimulation')">
           ▶ Run Simulation
         </button>
@@ -106,7 +90,7 @@ import { ref, computed } from "vue";
 defineEmits(["runSimulation"]);
 
 const showCharts = ref(false);
-const demandRaw = ref(0.65);
+const demandRaw = ref(0.78);
 const demandWidth = computed(() => demandRaw.value * 100 + "%");
 </script>
 

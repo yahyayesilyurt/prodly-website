@@ -3,65 +3,85 @@
     <header class="header">
       <div class="brand">
         <svg
-          width="48"
-          height="48"
-          viewBox="0 0 60 65"
+          class="logo-svg"
+          width="70"
+          height="88"
+          viewBox="0 0 540 670"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          aria-label="Prodly logo"
         >
-          <g stroke-width="1.8" stroke-linecap="round">
-            <g stroke="#1A363E">
-              <line x1="15" y1="10" x2="15" y2="25" />
-              <line x1="15" y1="25" x2="15" y2="40" />
-              <line x1="15" y1="40" x2="15" y2="55" />
+          <!-- lines -->
+          <g stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+            <!-- left stem -->
+            <line x1="75" y1="67" x2="75" y2="202" stroke="#3F799C" />
+            <line x1="75" y1="202" x2="75" y2="428" stroke="#1F4E82" />
+            <line x1="75" y1="428" x2="75" y2="608" stroke="#79AFAE" />
 
-              <line x1="15" y1="10" x2="30" y2="10" />
-              <line x1="15" y1="40" x2="30" y2="40" />
-            </g>
+            <!-- top -->
+            <line x1="75" y1="67" x2="293" y2="67" stroke="#3F799C" />
+            <line x1="75" y1="67" x2="197" y2="196" stroke="#79AFAE" />
+            <line x1="75" y1="202" x2="197" y2="196" stroke="#79AFAE" />
+            <line x1="75" y1="202" x2="197" y2="338" stroke="#1F4E82" />
+            <line x1="75" y1="428" x2="197" y2="338" stroke="#1F4E82" />
+            <line x1="75" y1="428" x2="197" y2="196" stroke="#79AFAE" />
+            <line x1="197" y1="196" x2="197" y2="338" stroke="#79AFAE" />
+            <line x1="197" y1="196" x2="293" y2="67" stroke="#79AFAE" />
 
-            <g stroke="#40A09B">
-              <line x1="30" y1="10" x2="42" y2="16" />
-              <line x1="42" y1="34" x2="30" y2="40" />
-            </g>
+            <!-- right/top bubble -->
+            <line x1="293" y1="67" x2="424" y2="118" stroke="#3F799C" />
+            <line x1="424" y1="118" x2="469" y2="254" stroke="#3F799C" />
+            <line x1="469" y1="254" x2="439" y2="385" stroke="#79AFAE" />
 
-            <g stroke="#48C0E4">
-              <line x1="42" y1="16" x2="45" y2="25" />
-              <line x1="45" y1="25" x2="42" y2="34" />
-            </g>
+            <line x1="293" y1="67" x2="321" y2="196" stroke="#79AFAE" />
+            <line x1="197" y1="196" x2="321" y2="196" stroke="#79AFAE" />
+            <line x1="321" y1="196" x2="469" y2="254" stroke="#1F4E82" />
+            <line x1="321" y1="196" x2="439" y2="385" stroke="#1F4E82" />
+            <line x1="321" y1="196" x2="403" y2="338" stroke="#1F4E82" />
+            <line x1="293" y1="338" x2="469" y2="254" stroke="#79AFAE" />
+            <line x1="293" y1="338" x2="439" y2="385" stroke="#79AFAE" />
+            <line x1="403" y1="338" x2="469" y2="254" stroke="#79AFAE" />
+            <line x1="403" y1="338" x2="439" y2="385" stroke="#79AFAE" />
+            <line x1="424" y1="118" x2="403" y2="338" stroke="#1F4E82" />
 
-            <g stroke="#40A09B" opacity="0.6">
-              <line x1="15" y1="10" x2="25" y2="20" />
-              <line x1="15" y1="25" x2="25" y2="20" />
-              <line x1="30" y1="10" x2="25" y2="20" />
-              <line x1="42" y1="16" x2="25" y2="20" />
+            <!-- middle -->
+            <line x1="197" y1="338" x2="293" y2="338" stroke="#79AFAE" />
+            <line x1="197" y1="338" x2="294" y2="429" stroke="#1F4E82" />
+            <line x1="293" y1="338" x2="294" y2="429" stroke="#79AFAE" />
+            <line x1="294" y1="429" x2="439" y2="385" stroke="#1F4E82" />
+            <line x1="75" y1="428" x2="138" y2="459" stroke="#79AFAE" />
+            <line x1="138" y1="459" x2="294" y2="429" stroke="#1F4E82" />
 
-              <line x1="15" y1="25" x2="30" y2="28" />
-              <line x1="15" y1="40" x2="30" y2="28" />
-              <line x1="30" y1="40" x2="30" y2="28" />
-              <line x1="42" y1="34" x2="30" y2="28" />
-            </g>
-
-            <g stroke="#48C0E4" opacity="0.6">
-              <line x1="25" y1="20" x2="30" y2="28" />
-              <line x1="45" y1="25" x2="30" y2="28" />
-            </g>
+            <!-- leg -->
+            <line x1="75" y1="428" x2="197" y2="608" stroke="#1F4E82" />
+            <line x1="75" y1="608" x2="138" y2="459" stroke="#79AFAE" />
+            <line x1="138" y1="459" x2="197" y2="608" stroke="#1F4E82" />
+            <line x1="138" y1="459" x2="197" y2="459" stroke="#3F799C" />
+            <line x1="197" y1="459" x2="197" y2="608" stroke="#1F4E82" />
+            <line x1="75" y1="608" x2="197" y2="608" stroke="#79AFAE" />
           </g>
 
-          <circle cx="25" cy="20" r="3.5" fill="#40A09B" />
-          <circle cx="30" cy="28" r="4" fill="#1A363E" />
+          <!-- nodes -->
+          <circle cx="75" cy="67" r="28" fill="#3F799C" />
+          <circle cx="75" cy="202" r="28" fill="#1F4E82" />
+          <circle cx="75" cy="428" r="28" fill="#1F4E82" />
+          <circle cx="75" cy="608" r="28" fill="#79AFAE" />
 
-          <circle cx="30" cy="10" r="4" fill="#40A09B" />
-          <circle cx="42" cy="16" r="4.5" fill="#48C0E4" />
-          <circle cx="45" cy="25" r="4" fill="#48C0E4" />
-          <circle cx="42" cy="34" r="4.5" fill="#40A09B" />
-          <circle cx="30" cy="40" r="4" fill="#1A363E" />
+          <circle cx="197" cy="196" r="28" fill="#79AFAE" />
+          <circle cx="197" cy="338" r="28" fill="#1F4E82" />
+          <circle cx="138" cy="459" r="28" fill="#79AFAE" />
+          <circle cx="197" cy="608" r="28" fill="#1F4E82" />
 
-          <circle cx="15" cy="10" r="4.5" fill="#1A363E" />
-          <circle cx="15" cy="25" r="4.5" fill="#1A363E" />
-          <circle cx="15" cy="40" r="4.5" fill="#1A363E" />
-          <circle cx="15" cy="55" r="4.5" fill="#40A09B" />
+          <circle cx="293" cy="67" r="28" fill="#79AFAE" />
+          <circle cx="321" cy="196" r="28" fill="#3F799C" />
+          <circle cx="293" cy="338" r="28" fill="#79AFAE" />
+          <circle cx="294" cy="429" r="28" fill="#1F4E82" />
+
+          <circle cx="424" cy="118" r="28" fill="#3F799C" />
+          <circle cx="469" cy="254" r="28" fill="#3F799C" />
+          <circle cx="403" cy="338" r="28" fill="#79AFAE" />
+          <circle cx="439" cy="385" r="28" fill="#79AFAE" />
         </svg>
-
         <strong>Prodly</strong>
       </div>
       <span class="tagline"> Your <em>AI</em> Decision Intelligence </span>
@@ -80,6 +100,7 @@
           @navigate="goTo"
         />
         <FeedbackAnalysis v-else-if="currentPage === 'feedback'" />
+        <ProductMemory v-else-if="currentPage === 'memory'" />
         <Reports v-else-if="currentPage === 'reports'" />
       </main>
     </div>
@@ -101,6 +122,7 @@ import Sidebar from "./components/Sidebar.vue";
 import Dashboard from "./views/Dashboard.vue";
 import RoadmapSimulation from "./views/RoadmapSimulation.vue";
 import FeedbackAnalysis from "./views/FeedbackAnalysis.vue";
+import ProductMemory from "./views/ProductMemory.vue";
 import Reports from "./views/Reports.vue";
 
 const currentPage = ref("home");
@@ -112,6 +134,7 @@ function goTo(page) {
 const titles = {
   feedback: "Feedback Analysis",
   reports: "Reports",
+  memory: "Product Memory",
 };
 
 const pageTitle = computed(() => titles[currentPage.value] || "");
@@ -254,4 +277,77 @@ const pageTitle = computed(() => titles[currentPage.value] || "");
     display: none;
   }
 }
+
+
+/* ===== Polished overrides ===== */
+
+.app-wrapper {
+  background: #f5f7fb;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.03);
+}
+
+.brand {
+  gap: 12px;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.logo-svg {
+  width: 42px;
+}
+
+.tagline {
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.main {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.04), transparent 20%),
+    #f8fafc;
+}
+
+.global-footer {
+  padding: 28px 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-brand strong {
+  letter-spacing: -0.3px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 14px 16px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .logo-svg {
+    width: 34px;
+  }
+
+  .global-footer {
+    padding: 22px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 </style>

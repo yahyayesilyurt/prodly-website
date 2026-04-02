@@ -10,6 +10,7 @@
         >
           <span class="icon">{{ item.icon }}</span>
           <span class="nav-label">{{ item.label }}</span>
+          <span v-if="item.badge" class="nav-badge">{{ item.badge }}</span>
         </li>
       </ul>
     </nav>
@@ -25,6 +26,7 @@ const navItems = [
   { id: "dashboard", icon: "📈", label: "Dashboard" },
   { id: "feedback", icon: "💬", label: "Feedback Analysis" },
   { id: "roadmap", icon: "📋", label: "Roadmap Simulation" },
+  { id: "memory", icon: "🧬", label: "Product Memory" },
   { id: "reports", icon: "📊", label: "Reports" },
 ];
 </script>
@@ -73,6 +75,17 @@ li.active {
   flex-shrink: 0;
 }
 
+.nav-badge {
+  margin-left: auto;
+  font-size: 9px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #2563eb, #3a9a7a);
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 99px;
+  letter-spacing: 0.3px;
+}
+
 /* Tablet */
 @media (max-width: 1024px) {
   .sidebar {
@@ -88,6 +101,9 @@ li.active {
   }
 
   .nav-label {
+    display: none;
+  }
+  .nav-badge {
     display: none;
   }
   .icon {

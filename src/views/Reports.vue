@@ -124,13 +124,13 @@
         </div>
         <div class="donut-legend">
           <div class="dl-row">
-            <span class="dot green"></span> Low risk <strong>3</strong>
+            <span class="dot green"></span> Low risk <strong>2</strong>
           </div>
           <div class="dl-row">
-            <span class="dot yellow"></span> Medium risk <strong>3</strong>
+            <span class="dot yellow"></span> Medium risk <strong>2</strong>
           </div>
           <div class="dl-row">
-            <span class="dot red"></span> High risk <strong>3</strong>
+            <span class="dot red"></span> High risk <strong>2</strong>
           </div>
         </div>
       </div>
@@ -236,9 +236,9 @@ const formats = [
 
 const kpis = [
   { label: "Total Feedback", value: "392", trend: 12, color: "#2563eb" },
-  { label: "Avg Demand Score", value: "0.65", trend: 5, color: "#22c55e" },
-  { label: "High Risk Features", value: "3", trend: -2, color: "#ef4444" },
-  { label: "Roadmap Success %", value: "72%", trend: 8, color: "#eab308" },
+  { label: "Avg Demand Score", value: "0.78", trend: 5, color: "#22c55e" },
+  { label: "High Risk Features", value: "2", trend: -2, color: "#ef4444" },
+  { label: "Roadmap Success %", value: "82%", trend: 8, color: "#eab308" },
 ];
 
 const volumeData = [
