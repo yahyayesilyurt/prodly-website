@@ -227,11 +227,6 @@ const faqs = ref([
     open: false,
   },
   {
-    q: "Is there a free trial for Pro?",
-    a: "Yes — Pro comes with a 14-day free trial, no credit card required. You will get full access to all features during the trial.",
-    open: false,
-  },
-  {
     q: "What payment methods do you accept?",
     a: "We accept all major credit cards (Visa, Mastercard, Amex) as well as bank transfers for annual Enterprise plans.",
     open: false,
