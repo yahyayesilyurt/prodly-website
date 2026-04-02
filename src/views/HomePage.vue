@@ -171,17 +171,16 @@ const features = [
     page: "roadmap",
   },
   {
-    icon: "📊",
-    title: "Reports",
-    desc: "Generate exportable summaries in PDF, CSV or JSON. Visualize trends over time and share insights with stakeholders.",
-    page: "reports",
-  },
-  {
     icon: "🧬",
     title: "Product Memory",
     desc: "Bayesian intelligence layer that learns from every sprint. Tracks velocity patterns, prevents recurring planning errors, and sharpens delivery forecasts over time.",
     page: "memory",
-    badge: "New",
+  },
+  {
+    icon: "📊",
+    title: "Reports",
+    desc: "Generate exportable summaries in PDF, CSV or JSON. Visualize trends over time and share insights with stakeholders.",
+    page: "reports",
   },
 ];
 
