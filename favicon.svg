@@ -1,54 +1,92 @@
-<svg width="48" height="48" viewBox="0 0 60 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g stroke-width="1.8" stroke-linecap="round">
-    
-    <g stroke="#1A363E">
-      <line x1="15" y1="10" x2="15" y2="25" />
-      <line x1="15" y1="25" x2="15" y2="40" />
-      <line x1="15" y1="40" x2="15" y2="55" />
-      
-      <line x1="15" y1="10" x2="30" y2="10" />
-      <line x1="15" y1="40" x2="30" y2="40" />
-    </g>
+<svg width="540" height="670" viewBox="0 0 540 670" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line-dark { stroke: #1F4E82; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .line-mid  { stroke: #3F799C; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .line-teal { stroke: #79AFAE; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
 
-    <g stroke="#40A09B">
-      <line x1="30" y1="10" x2="42" y2="16" />
-      <line x1="42" y1="34" x2="30" y2="40" />
-    </g>
+      .node-dark { fill: #1F4E82; }
+      .node-mid  { fill: #3F799C; }
+      .node-teal { fill: #79AFAE; }
+    </style>
+  </defs>
 
-    <g stroke="#48C0E4">
-      <line x1="42" y1="16" x2="45" y2="25" />
-      <line x1="45" y1="25" x2="42" y2="34" />
-    </g>
+  <!-- LEFT COLUMN / P STEM -->
+  <line class="line-mid"  x1="75"  y1="67"  x2="75"  y2="202" />
+  <line class="line-dark" x1="75"  y1="202" x2="75"  y2="428" />
+  <line class="line-teal" x1="75"  y1="428" x2="75"  y2="608" />
 
-    <g stroke="#40A09B" opacity="0.6">
-      <line x1="15" y1="10" x2="25" y2="20" />
-      <line x1="15" y1="25" x2="25" y2="20" />
-      <line x1="30" y1="10" x2="25" y2="20" />
-      <line x1="42" y1="16" x2="25" y2="20" />
-      
-      <line x1="15" y1="25" x2="30" y2="28" />
-      <line x1="15" y1="40" x2="30" y2="28" />
-      <line x1="30" y1="40" x2="30" y2="28" />
-      <line x1="42" y1="34" x2="30" y2="28" />
-    </g>
+  <!-- TOP AREA -->
+  <line class="line-mid"  x1="75"  y1="67"  x2="293" y2="67" />
+  <line class="line-mid"  x1="75"  y1="67"  x2="197" y2="196" />
+  <line class="line-teal" x1="75"  y1="202" x2="197" y2="196" />
+  <line class="line-teal" x1="75"  y1="428" x2="197" y2="196" />
+  <line class="line-mid"  x1="197" y1="196" x2="197" y2="338" />
+  <line class="line-teal" x1="197" y1="196" x2="293" y2="67" />
+  <line class="line-teal" x1="75"  y1="202" x2="197" y2="338" />
+  <line class="line-dark" x1="75"  y1="202" x2="197" y2="338" />
+  <line class="line-teal" x1="75"  y1="67"  x2="197" y2="196" />
 
-    <g stroke="#48C0E4" opacity="0.6">
-      <line x1="25" y1="20" x2="30" y2="28" />
-      <line x1="45" y1="25" x2="30" y2="28" />
-    </g>
-  </g>
+  <!-- TOP RIGHT OUTER P CURVE -->
+  <line class="line-mid"  x1="293" y1="67"  x2="424" y2="118" />
+  <line class="line-mid"  x1="424" y1="118" x2="469" y2="254" />
+  <line class="line-mid"  x1="469" y1="254" x2="439" y2="385" />
 
-  <circle cx="25" cy="20" r="3.5" fill="#40A09B" />
-  <circle cx="30" cy="28" r="4" fill="#1A363E" />
+  <!-- TOP RIGHT INNER -->
+  <line class="line-teal" x1="293" y1="67"  x2="321" y2="196" />
+  <line class="line-teal" x1="197" y1="196" x2="321" y2="196" />
+  <line class="line-dark" x1="321" y1="196" x2="469" y2="254" />
+  <line class="line-dark" x1="321" y1="196" x2="439" y2="385" />
+  <line class="line-dark" x1="321" y1="196" x2="403" y2="338" />
+  <line class="line-teal" x1="293" y1="338" x2="469" y2="254" />
+  <line class="line-teal" x1="293" y1="338" x2="439" y2="385" />
+  <line class="line-teal" x1="403" y1="338" x2="469" y2="254" />
+  <line class="line-teal" x1="403" y1="338" x2="439" y2="385" />
+  <line class="line-dark" x1="424" y1="118" x2="403" y2="338" />
 
-  <circle cx="30" cy="10" r="4" fill="#40A09B" />
-  <circle cx="42" cy="16" r="4.5" fill="#48C0E4" />
-  <circle cx="45" cy="25" r="4" fill="#48C0E4" />
-  <circle cx="42" cy="34" r="4.5" fill="#40A09B" />
-  <circle cx="30" cy="40" r="4" fill="#1A363E" />
+  <!-- MID STRUCTURE -->
+  <line class="line-teal" x1="197" y1="338" x2="293" y2="338" />
+  <line class="line-dark" x1="197" y1="338" x2="75"  y2="428" />
+  <line class="line-dark" x1="197" y1="338" x2="294" y2="429" />
+  <line class="line-dark" x1="75"  y1="428" x2="197" y2="608" />
+  <line class="line-teal" x1="75"  y1="428" x2="138" y2="459" />
+  <line class="line-dark" x1="138" y1="459" x2="294" y2="429" />
+  <line class="line-teal" x1="293" y1="338" x2="294" y2="429" />
+  <line class="line-dark" x1="294" y1="429" x2="439" y2="385" />
 
-  <circle cx="15" cy="10" r="4.5" fill="#1A363E" />
-  <circle cx="15" cy="25" r="4.5" fill="#1A363E" />
-  <circle cx="15" cy="40" r="4.5" fill="#1A363E" />
-  <circle cx="15" cy="55" r="4.5" fill="#40A09B" />
+  <!-- BOTTOM LEFT LEG -->
+  <line class="line-teal" x1="75"  y1="608" x2="138" y2="459" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-dark" x1="138" y1="459" x2="197" y2="608" />
+  <line class="line-mid"  x1="138" y1="459" x2="197" y2="459" />
+  <line class="line-dark" x1="197" y1="459" x2="197" y2="608" />
+  <line class="line-mid"  x1="75"  y1="608" x2="197" y2="608" />
+
+  <!-- NODES -->
+  <circle class="node-mid"  cx="75"  cy="67"  r="28" />
+  <circle class="node-dark" cx="75"  cy="202" r="28" />
+  <circle class="node-dark" cx="75"  cy="428" r="28" />
+  <circle class="node-teal" cx="75"  cy="608" r="28" />
+
+  <circle class="node-teal" cx="197" cy="196" r="28" />
+  <circle class="node-dark" cx="197" cy="338" r="28" />
+  <circle class="node-teal" cx="138" cy="459" r="28" />
+  <circle class="node-dark" cx="197" cy="608" r="28" />
+
+  <circle class="node-teal" cx="293" cy="67"  r="28" />
+  <circle class="node-mid"  cx="321" cy="196" r="28" />
+  <circle class="node-teal" cx="293" cy="338" r="28" />
+  <circle class="node-dark" cx="294" cy="429" r="28" />
+
+  <circle class="node-mid"  cx="424" cy="118" r="28" />
+  <circle class="node-mid"  cx="469" cy="254" r="28" />
+  <circle class="node-teal" cx="439" cy="385" r="28" />
+  <circle class="node-mid"  cx="403" cy="338" r="28" />
 </svg>
